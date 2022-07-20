@@ -1,2 +1,3 @@
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" title="VisualG"/>
-Programas resolvidos para estudo de lógica e treino no VisualG.
+<img src="src/LogoVisualG.png" width="200" height="100" title="VisualG"/>
+
+## Programas resolvidos para estudo de lógica e treino no VisualG.
