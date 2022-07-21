@@ -1,0 +1,33 @@
+algoritmo "semnome"
+//9. Dados três valores X, Y e Z, verificar se eles podem ser os comprimentos dos lados de
+//um triângulo e, se forem verificar se é um triângulo equilátero, isósceles ou escalenos.
+//Se eles não formarem um triângulo, escrever a mensagem. Considere as seguintes
+//propriedades: •O comprimento de cada lado em um triângulo é menor que a soma
+//dos outros dois lados; •Equiláteros: tem os comprimentos dos três lados iguais;
+//•Isósceles: tem os comprimentos de dois lados iguais; •escaleno: tem os
+//comprimentos dos três lados diferentes.
+
+var
+X, Y, Z :REAL
+inicio
+  ESCREVAL("DIGITE OS LADOS DE UM TRIANGULO:")
+  ESCREVA("LADO X: ")
+  LEIA(X)
+  ESCREVA("LADO Y: ")
+  LEIA(Y)
+  ESCREVA("LADO Z: ")
+  LEIA(Z)
+  SE((X+Y > Z)E(X+Z > Y)E(Y+Z > X))ENTAO
+    SE((X=Y)E(Y=Z))ENTAO
+      ESCREVAL("TRIÂNGULO EQUILÁTERO.")
+    SENAO
+      SE((X<>Y)E(X<>Z)E(Y<>Z))ENTAO
+        ESCREVAL("TRIÂNGULO ESCALENO.")
+      SENAO
+        ESCREVAL("TRIÂNGULO ISÓSCELES.")
+      FIMSE
+    FIMSE
+  SENAO
+    ESCREVAL("MEDIDAS NÃO É DE UM TRIÂNGULO.")
+  FIMSE
+fimalgoritmo
